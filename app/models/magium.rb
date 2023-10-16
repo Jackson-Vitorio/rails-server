@@ -1,0 +1,2 @@
+class Magium < ApplicationRecord
+end

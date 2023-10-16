@@ -1,0 +1,37 @@
+<%= form_with(model: magium) do |form| %>
+  <% if magium.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(magium.errors.count, "error") %> prohibited this magium from being saved:</h2>
+
+      <ul>
+        <% magium.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :tempo_cast, style: "display: block" %>
+    <%= form.text_field :tempo_cast %>
+  </div>
+
+  <div>
+    <%= form.label :descricao, style: "display: block" %>
+    <%= form.text_area :descricao %>
+  </div>
+
+  <div>
+    <%= form.label :req, style: "display: block" %>
+    <%= form.text_field :req %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

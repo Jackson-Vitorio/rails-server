@@ -1,14 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Magia</h1>
+<h1>Magias</h1>
 
 <div id="magia">
   <% @magia.each do |magium| %>
     <%= render magium %>
     <p>
-      <%= link_to "Show this magium", magium %>
+      <%= link_to "Mostrar magias", magium %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New magium", new_magium_path %>
+<%= link_to "Nova Magia", new_magium_path %>

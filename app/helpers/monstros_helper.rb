@@ -1,0 +1,2 @@
+module MonstrosHelper
+end

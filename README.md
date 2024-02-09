@@ -1,24 +1,5 @@
-# README
+The project on GitHub is a D&D project focused on helping DMs and RPG players by providing all the monsters and spells, as well as making it easy to create your own. It is all built in Ruby on Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The project is still in development, but it is already a valuable resource for DMs and RPG players. The monsters and spells are all well-written and balanced, and the system for creating your own monsters and spells is easy to use.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project is also open source, which means that anyone can contribute to it. This makes it a great way for DMs and RPG players to learn more about game design and development.

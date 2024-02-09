@@ -1,0 +1,47 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  tamtype: MyString
+  armor: 1
+  life: 1
+  des: 1
+  for: 1
+  dez: 1
+  con: 1
+  inte: 1
+  sab: 1
+  car: 1
+  st: MyString
+  skills: MyString
+  resis: MyString
+  sense: MyString
+  lan: MyString
+  cr: 1
+  hab: MyText
+  leng_res: false
+  leng_skills: MyText
+  actions: MyText
+
+two:
+  nome: MyString
+  tamtype: MyString
+  armor: 1
+  life: 1
+  des: 1
+  for: 1
+  dez: 1
+  con: 1
+  inte: 1
+  sab: 1
+  car: 1
+  st: MyString
+  skills: MyString
+  resis: MyString
+  sense: MyString
+  lan: MyString
+  cr: 1
+  hab: MyText
+  leng_res: false
+  leng_skills: MyText
+  actions: MyText

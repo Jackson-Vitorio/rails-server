@@ -4,7 +4,7 @@
 
 <div id="magia">
   <% @magia.each do |magium| %>
-    <%= render magium %>
+    <strong>Nome: </strong> <%=magium.nome%>
     <p>
       <%= link_to "Mostrar magia", magium %>
     </p>

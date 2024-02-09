@@ -1,2 +1,17 @@
-<h1> futuro monstos <h1>
-<a href="/">Voltar</a>
+<p style="color: green"><%= notice %></p>
+
+<h1>Monstros</h1>
+
+<div id="monstros">
+  <% @monstros.each do |monstro| %>
+    <strong>Nome: </strong> <%=monstro.nome%>
+    <strong>Tamanho e Tipo: </strong> <%=monstro.tamtype%>
+    <strong>Nivel: </strong> <%=monstro.cr.to_s%>
+    <p>
+      <%= link_to "Mostrar monstro", monstro %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Novo monstro", new_monstro_path %>
+<%= link_to "Voltar", root_path %>

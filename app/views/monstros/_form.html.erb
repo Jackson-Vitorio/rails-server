@@ -1,0 +1,122 @@
+<%= form_with(model: monstro) do |form| %>
+  <% if monstro.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(monstro.errors.count, "error") %> prohibited this monstro from being saved:</h2>
+
+      <ul>
+        <% monstro.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :Nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :"Tamanho/Tipo", style: "display: block" %>
+    <%= form.text_field :tamtype %>
+  </div>
+
+  <div>
+    <%= form.label :Armadura, style: "display: block" %>
+    <%= form.number_field :armor %>
+  </div>
+
+  <div>
+    <%= form.label :Vida, style: "display: block" %>
+    <%= form.number_field :life %>
+  </div>
+
+  <div>
+    <%= form.label :Deslocamento, style: "display: block" %>
+    <%= form.number_field :des %>
+  </div>
+
+  <div>
+    <%= form.label :Força, style: "display: block" %>
+    <%= form.number_field :for %>
+  </div>
+
+  <div>
+    <%= form.label :Destreza, style: "display: block" %>
+    <%= form.number_field :dez %>
+  </div>
+
+  <div>
+    <%= form.label :Constituição, style: "display: block" %>
+    <%= form.number_field :con %>
+  </div>
+
+  <div>
+    <%= form.label :Inteligencia, style: "display: block" %>
+    <%= form.number_field :inte %>
+  </div>
+
+  <div>
+    <%= form.label :Sabedoria, style: "display: block" %>
+    <%= form.number_field :sab %>
+  </div>
+
+  <div>
+    <%= form.label :Carisma, style: "display: block" %>
+    <%= form.number_field :car %>
+  </div>
+
+  <div>
+    <%= form.label :"Testes de resistencia", style: "display: block" %>
+    <%= form.text_field :st %>
+  </div>
+
+  <div>
+    <%= form.label :Pericias, style: "display: block" %>
+    <%= form.text_field :skills %>
+  </div>
+
+  <div>
+    <%= form.label :Resistencias, style: "display: block" %>
+    <%= form.text_field :resis %>
+  </div>
+
+  <div>
+    <%= form.label :Sentidos, style: "display: block" %>
+    <%= form.text_field :sense %>
+  </div>
+
+  <div>
+    <%= form.label :Linguas, style: "display: block" %>
+    <%= form.text_field :lan %>
+  </div>
+
+  <div>
+    <%= form.label :"Nivel de desafio", style: "display: block" %>
+    <%= form.number_field :cr %>
+  </div>
+
+  <div>
+    <%= form.label :Habilidades, style: "display: block" %>
+    <%= form.text_area :hab %>
+  </div>
+
+  <div>
+    <%= form.label :"Resistencia Lendaria", style: "display: block" %>
+    <%= form.check_box :leng_res %>
+  </div>
+
+  <div>
+    <%= form.label :"Ações Lendarias", style: "display: block" %>
+    <%= form.text_area :leng_skills %>
+  </div>
+
+  <div>
+    <%= form.label :Ações, style: "display: block" %>
+    <%= form.text_area :actions %>
+  </div>
+
+  <div>
+    <%= form.submit :Criar %>
+  </div>
+<% end %>

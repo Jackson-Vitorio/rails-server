@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @monstro %>
+
+<div>
+  <%= link_to "Editar esse monstro", edit_monstro_path(@monstro) %> |
+  <%= link_to "Voltar para monstros", monstros_path %>
+
+  <%= button_to "Apagar esse monstro", @monstro, method: :delete %>
+</div>
